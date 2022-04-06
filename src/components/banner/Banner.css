@@ -446,4 +446,43 @@ h1, h2 {
     .sticky {
       margin-left: 1.5rem;
     }
+
+    .tenis {
+      width: 500px;
+    
+      filter: drop-shadow(0 15px 15px #00000080);
+    
+      position: absolute;
+      top: 50%;
+      left: 87%;
+      transform: translate(-50%, -50%) rotate(-30deg);
+      z-index: 2;
+      animation: slide 1s ease;
+    }
+  
+    .logotipos {
+      width: 400px;
+    
+      filter: drop-shadow(0 15px 15px #00000080);
+    
+      position: absolute;
+      top: 50%;
+      left: 56%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      animation: slide 1s ease;
+    }
+  
+    .logotiposadidas{
+      width: 400px;
+    
+      filter: drop-shadow(0 15px 15px #00000080);
+    
+      position: absolute;
+      top: 40%;
+      left: 56%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      animation: slide 1s ease;
+    }
   }
