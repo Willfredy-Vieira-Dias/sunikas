@@ -1,0 +1,129 @@
+/*Produtos em lançamentos*/
+
+.producto{
+    margin-left: 1%;
+    margin-top: 3%;
+}
+
+.cabecalho{
+    text-align: center;
+    font-size: 3rem;
+    padding: 10px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.cabecalho span{
+    color: #ea1300;
+}
+.producto .caixa-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.producto .caixa-container .caixa{
+    border: .1rem solid rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background: #f5f5f5;
+    flex: 1 1 30rem;
+}
+.producto .caixa-container .conteudo{
+    padding: 1.5rem;
+}
+.producto .caixa-container .caixa img{
+    height: 20rem;
+    transform: rotate(-35deg);
+    margin: 8rem 2rem;
+}
+.producto .caixa-container .caixa:hover img{
+    transform: rotate(-35deg) scale(1.2);
+}
+.producto .caixa-container .caixa .icones{
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    top: .5rem;
+    left: 1rem;
+}
+.producto .caixa-container .caixa .icones a{
+    height: 4.5rem;
+    width: 5rem;
+    line-height: 4.5rem;
+    font-size: 2rem;
+    color: #000;
+    border: .1rem solid #000;
+    border-radius: .5rem;
+    background: #fff;
+    margin-top: .5rem;
+}
+.producto .caixa-container .caixa .icones{
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    top: .5rem;
+    left: -10rem;
+}
+.producto .caixa-container .caixa:hover .icones{
+    left: 1rem;
+}
+.producto .caixa-container .caixa .icones a:hover{
+    color: orangered;
+    color: #fff;
+}
+.producto .caixa-container .caixa .conteudo h3{
+    color: #ea1300;
+    font-size: 2.5rem;
+}
+.producto .caixa-container .caixa .conteudo .preco{
+    color: #000;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    padding: 1rem 0;
+}
+.producto .caixa-container .caixa .conteudo .preco span{
+    color: #ea1300;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+.producto .caixa-container .caixa .conteudo .estrelas{
+    padding-bottom: 1rem;
+}
+.producto .caixa-container .caixa .conteudo .estrelas i{
+    font-size: 1.7rem;
+    color: rgb(210, 61, 7);
+}
+
+
+
+
+
+
+@media (max-width:768px){
+    #menu-bar{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: -120%;
+        width: 100%;
+        background: #eee;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+    }
+    header .navbar a{
+        font-size: 2rem;
+        background: #fff;
+        border: .1rem solid #000;
+        border-radius: .5rem;
+        padding: 1rem;
+        margin: 1rem;
+        display: block;
+        text-align: center;
+    }
+    header .navbar.active{
+        left: 0;
+    }
+}

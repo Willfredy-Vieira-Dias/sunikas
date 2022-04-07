@@ -1,0 +1,448 @@
+
+*{
+
+    margin: 0;
+    padding: 0;
+    caixa-sizing: border-caixa;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .2s linear;
+}
+html{
+    font-size: 60%;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-image: linear-gradient(95deg, #111111, #212121);;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-conteudo: space-between;
+    caixa-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+header .logo{
+    font-size: 2rem;
+    color: #000;
+    font-weight: 500;
+}
+header .navbar a{
+    font-size: 1.5rem;
+    color: #000;
+    margin: 0 2rem;
+}
+header .navbar a:hover{
+    color: orangered;
+}
+header .icons a{
+    font-size: 2rem;
+    color: #000;
+    margin-left: 1.5rem;
+}
+header .icons a:hover{
+    color: orangered;
+}
+#menu-bar{
+    font-size: 2rem;
+    padding: .5rem 1rem;
+    border: .1rem solid #000;
+    color: #000;
+    border-radius: .3rem;
+    cursor: pointer;
+    display: none;
+}
+/* end header  */
+
+
+@keyframes slideconteudo{
+    0%{
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+}
+.home .slide-container .slide .image{
+    flex: 1 1 50rem;
+    padding-bottom: 15rem;
+    position: relative;
+    z-index: 0;
+}
+.home .slide-container .slide .image .shoe{
+    width: 100%;
+    transform: rotate(-10deg);
+    animation: shoe .3s linear;
+}
+@keyframes shoe{
+    0%{
+        transform: rotate(0deg) scale(.5);
+    }
+}
+.home .slide-container .slide .conteudo span{
+    font-size: 2rem;
+    color: orangered;
+}
+.home .slide-container .slide .conteudo h3{
+    font-size: 5rem;
+    color: #000;
+}
+.home .slide-container .slide .conteudo p{
+    font-size: 1.7rem;
+    color: #666;
+    padding: .5rem 0;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    border: .2rem solid #000;
+    font-weight: bolder;
+    font-size: 1.7rem;
+    color: #000;
+    cursor: pointer;
+    background: #fff;
+    padding: .8rem 3rem;
+}
+
+.home .slide-container{
+    display: none;
+}
+.home .slide-container.active{
+    display: block;
+}
+.home #prev,.home #next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5.5rem;
+    font-size: 2rem;
+    color: #000;
+    border:.2rem solid #000;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+.home #prev:hover,.home #next:hover{
+    color: #fff;
+    background: orangered;
+}
+.home #prev{
+    left: 3rem;
+}
+.home #next{
+    right: 3rem;
+}
+/* end home  */
+.cabecalho{
+    text-align: center;
+    font-size: 3rem;
+    padding: 10px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.cabecalho span{
+    color: rgb(252, 118, 69);
+}
+.product .caixa-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.product .caixa-container .caixa{
+    border: .1rem solid rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background: #f5f5f5;
+    flex: 1 1 30rem;
+}
+.product .caixa-container .conteudo{
+    padding: 1.5rem;
+}
+.product .caixa-container .caixa img{
+    height: 20rem;
+    transform: rotate(-35deg);
+    margin: 8rem 2rem;
+}
+.product .caixa-container .caixa:hover img{
+    transform: rotate(-35deg) scale(1.2);
+}
+.product .caixa-container .caixa .icons{
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    top: .5rem;
+    left: 1rem;
+}
+.product .caixa-container .caixa .icons a{
+    height: 4.5rem;
+    width: 5rem;
+    line-height: 4.5rem;
+    font-size: 2rem;
+    color: #000;
+    border: .1rem solid #000;
+    border-radius: .5rem;
+    background: #fff;
+    margin-top: .5rem;
+}
+.product .caixa-container .caixa .icons{
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    top: .5rem;
+    left: -10rem;
+}
+.product .caixa-container .caixa:hover .icons{
+    left: 1rem;
+}
+.product .caixa-container .caixa .icons a:hover{
+    color: orangered;
+    color: #fff;
+}
+.product .caixa-container .caixa .conteudo h3{
+    color: #000;
+    font-size: 2.5rem;
+}
+.product .caixa-container .caixa .conteudo .preco{
+    color: #000;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    padding: 1rem 0;
+}
+.product .caixa-container .caixa .conteudo .preco span{
+    color: #000;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+.product .caixa-container .caixa .conteudo .estrelas{
+    padding-bottom: 1rem;
+}
+.product .caixa-container .caixa .conteudo .estrelas i{
+    font-size: 1.7rem;
+    color: orangered;
+}
+/* end product  */
+.destaque .fila{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    background: #f9f9f9;
+    padding: 2rem;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+.destaque .fila .conteudo{
+    flex: 1 1 40rem;
+}
+.destaque .fila .imagem-container{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    flex: 1 1 50rem;
+}
+.destaque .fila .imagem-container .imagem-pequena{
+    width: 20%;
+}
+.destaque .fila .imagem-container .imagem-grande{
+    width: 80%;
+    padding: 1rem;
+}
+.destaque .fila .imagem-container .imagem-pequena img{
+    width: 100%;
+    padding: 1rem;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    cursor: pointer;
+}
+.destaque .fila .imagem-container .imagem-pequena img:hover{
+    background: #ccc;
+}
+.destaque .fila .imagem-container .imagem-grande img{
+    width: 100%;
+}
+.destaque .fila .imagem-container .imagem-grande img:hover{
+    transform: scale(1.05);
+}
+.destaque .fila .conteudo h3{
+    font-size: 2.5rem;
+    color: #000;
+}
+.destaque .fila .conteudo .estrelas i{
+    font-size: 1.7rem;
+    color: orange;
+    padding: .5rem 0;
+}
+.destaque .fila .conteudo p{
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0;
+}
+.destaque .fila .conteudo .preco{
+    font-size: 2.5rem;
+    color: #000;
+    font-weight: bolder;
+}
+.destaque .fila .conteudo .preco span{
+    font-size: 1.5rem;
+    color: orange;
+    text-decoration: line-through;
+}
+/* end destaque  */
+.equipa .caixa-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.equipa .caixa-container .caixa{
+    flex: 1 1 30rem;
+    text-align: center;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    background: #f9f9f9;
+    padding: 2rem;
+}
+.equipa .caixa-container .caixa img{
+    border-radius: 50%;
+    object-fit: cover;
+    height: 15rem;
+    width: 15rem;
+    margin: 1rem 0;
+    border: 4px solid #ddd;
+}
+.equipa .caixa-container .caixa img:hover{
+   transform: scale(1.2);
+}
+.equipa .caixa-container .caixa h3{
+    font-size: 2.5rem;
+    color: #000;
+}
+.equipa .caixa-container .caixa p{
+    font-size: 1.6rem;
+    color: #666;
+    padding: 1rem 0;
+}
+.equipa .caixa-container .caixa .estrelas i{
+    color: orangered;
+    font-size: 2rem;
+}
+/* end equipa  */
+.novidades{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+.novidades .conteudo{
+    text-align: center;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    background: #f9f9f9;
+    padding: 2rem;
+}
+.novidades .conteudo h3{
+    font-size: 2.5rem;
+    color: #000;
+}
+.novidades .conteudo p{
+    font-size: 1.5rem;
+    color: #666;
+    margin: 1rem auto;
+    max-width: 60rem;
+}
+.novidades .conteudo form{
+    margin:  1rem auto;
+    max-width: 50rem;
+    display: flex;
+}
+
+.novidades .conteudo form .email{
+    width: 100%;
+    font-size: 1.7rem;
+    text-transform: none;
+    color: #333;
+    padding: 1rem;
+    border: .2rem solid #000;
+    border-right: none;
+    margin-top: 1rem;
+}
+.novidades .conteudo form .btn{
+    border-radius: none;
+}
+/* end novidades  */
+.copyright .caixa{
+    padding: .1rem;
+    text-align: center;
+}
+.copyright .caixa h3{
+    font-size: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive  */
+@media (max-width:768px){
+    #menu-bar{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: -120%;
+        width: 100%;
+        background: #eee;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+    }
+    header .navbar a{
+        font-size: 2rem;
+        background: #fff;
+        border: .1rem solid #000;
+        border-radius: .5rem;
+        padding: 1rem;
+        margin: 1rem;
+        display: block;
+        text-align: center;
+    }
+    header .navbar.active{
+        left: 0;
+    }
+}

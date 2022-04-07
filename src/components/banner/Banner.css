@@ -244,6 +244,7 @@ h1, h2 {
   .publicidade .lado-esquerdo a:hover {
     background: red;
     color: #fff;
+    border-radius: 20px;
   }
   
   .publicidade .lado-esquerdo a.activo {color: #fff;}
