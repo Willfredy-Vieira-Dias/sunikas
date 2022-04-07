@@ -5,56 +5,91 @@
         "nome": "Nike Air Jordan XXXI",
         "preco": "70.000",
         "desconto": "115.450",
-        "imagem": "../img/jordannikesplush.png"
+        "imagem": "imagens/jordannikesplush.png"
     },
     {
         "id": 2,
         "nome": "Nike Mag McFly",
         "preco": "947.890",
         "desconto": "1.250.000",
-        "imagem": "../img/nikemagmacfly.png"
+        "imagem": "imagens/nikemagmacfly.png"
     },
     {
         "id": 3,
         "nome": "Nike Misty Max Z",
         "preco": "33.900",
         "desconto": "45.999",
-        "imagem": "../img/NikeMystymax.png"
+        "imagem": "imagens/NikeMystymax.png"
     },
     {
         "id": 4,
         "nome": "Nike Air Max",
         "preco": "80.230",
         "desconto": "83.300",
-        "imagem": "../img/nikeairmax22.png"
+        "imagem": "imagens/nikeairmax22.png"
     },
     {
-        "id": 6,
+        "id": 5,
         "nome": "Vans Old Skool",
         "preco": "15.000",
         "desconto": "18.500",
-        "imagem": "../img/vansold.png"
+        "imagem": "imagens/vansold.png"
     },
     {
-        "id": 7,
+        "id": 6,
         "nome": "Vans Old Skool Hi",
         "preco": "70.000",
         "desconto": "115.450",
-        "imagem": "../img/vansscama.png"
+        "imagem": "imagens/vansscama.png"
     },
     {
-        "id": 8,
+        "id": 7,
         "nome": "Nike Vans",
         "preco": "78.199",
         "desconto": "81.100",
-        "imagem": "../img/6.jpg"
+        "imagem": "imagens/6.jpg"
     },
     {
-        "id": 9,
+        "id": 8,
         "nome": "Puma Suede",
         "preco": "39.000",
         "desconto": "64.000",
-        "imagem": "../img/pupu.png"
+        "imagem": "imagens/pupu.png"
+    },
+    {
+        "id": 9,
+        "nome": "Nike Air Force 1",
+        "preco": "32.770",
+        "desconto": "37.980",
+        "imagem": "imagens/nikestary.png"
+    },
+    {
+        "id": 10,
+        "nome": "Skechers S",
+        "preco": "9.000",
+        "desconto": "11.000",
+        "imagem": "imagens/new.png"
+    },
+    {
+        "id": 11,
+        "nome": "New Balance Farizeth",
+        "preco": "93.300",
+        "desconto": "123.340",
+        "imagem": "imagens/new2.png"
+    },
+    {
+        "id": 12,
+        "nome": "Reebok Vieira Dias 15K",
+        "preco": "234.125",
+        "desconto": "330.990",
+        "imagem": "imagens/reebok.png"
+    },
+    {
+        "id": 13,
+        "nome": "Wilson Boots",
+        "preco": "44.322",
+        "desconto": "45.989",
+        "imagem": "imagens/boots2.png"
     }
 ]
 }

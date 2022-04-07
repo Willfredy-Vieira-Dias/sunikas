@@ -22,7 +22,7 @@
 }
 .producto .caixa-container .caixa{
     border: .1rem solid rgba(0, 0, 0, .1);
-    border-radius: .5rem;
+    border-radius: 20px;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -36,9 +36,11 @@
     height: 20rem;
     transform: rotate(-35deg);
     margin: 8rem 2rem;
+    transition: all .2s linear;
 }
 .producto .caixa-container .caixa:hover img{
     transform: rotate(-35deg) scale(1.2);
+    transition: all .2s linear;
 }
 .producto .caixa-container .caixa .icones{
     display: flex;
@@ -54,7 +56,7 @@
     font-size: 2rem;
     color: #000;
     border: .1rem solid #000;
-    border-radius: .5rem;
+    border-radius: 20px;
     background: #fff;
     margin-top: .5rem;
 }
@@ -117,7 +119,7 @@
         font-size: 2rem;
         background: #fff;
         border: .1rem solid #000;
-        border-radius: .5rem;
+        border-radius: 20px;
         padding: 1rem;
         margin: 1rem;
         display: block;

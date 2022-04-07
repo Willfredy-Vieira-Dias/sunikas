@@ -113,7 +113,7 @@ const novos = () => {
        
 
         <section class="equipa" id="equipa">
-            <h1 class="cabecalho">Equipa de Desenvolvimento <span>Sunikas Dev Women</span></h1>
+            <h1 class="cabecalho">Desenvolvedor do site e Criador da marca <span>Sunikas</span></h1>
             <div class="caixa-container">
                 <div class="caixa">
                     <img src={equipa1} alt=""/>
@@ -129,38 +129,6 @@ const novos = () => {
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa fa-star"></i>
-                    </div>
-                </div>
-                <div class="caixa">
-                    <img src={equipa2} alt=""/>
-                    <h3>Fátima Vieira Dias</h3>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                        Eos sequi temporibus impedit corporis vero ab exercitationem 
-                        dolore voluptatibus, nisi non.
-                    </p>
-                    <div class="estrelas">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa fa-star-half-o"></i>
-                    </div>
-                </div>
-                <div class="caixa">
-                    <img src={equipa3} alt=""/>
-                    <h3>Juceline Vieira Dias</h3>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                        Eos sequi temporibus impedit corporis vero ab exercitationem 
-                        dolore voluptatibus, nisi non.
-                    </p>
-                    <div class="estrelas">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                        <i class="fa fa fa-star-half-o"></i>
                     </div>
                 </div>
             </div>
