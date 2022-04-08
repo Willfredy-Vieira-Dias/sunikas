@@ -15,144 +15,150 @@ import artigo13 from "../img/product3/4.jpg"
 import equipa1 from "../img/willfredyimg.png"
 import equipa2 from "../img/team/2.png"
 import equipa3 from "../img/team/3.png"
-
+import Fade from 'react-reveal/Fade';
 
 const novos = () => {
   return (
     <>
-        <section class="destaque" id="destake">
-            <h1 class="cabecalho">Novos <span>Productos</span></h1>
-            <div class="fila">
-                <div class="imagem-container">
-                    <div class="imagem-pequena">
-                        <img src={artigo1} alt="" class="destaque-image-1"/>
-                        <img src={artigo2} alt="" class="destaque-image-1"/>
-                        <img src={artigo3} alt="" class="destaque-image-1"/>
-                        <img src={artigo4} alt="" class="destaque-image-1"/>
+        <section className="destaque" id="destake">
+            <h1 className="cabecalho">Novos <span>Productos</span></h1>
+            <Fade left big cascade>
+            <div className="fila">
+                <div className="imagem-container">
+                    <div className="imagem-pequena">
+                        <img src={artigo1} alt="" className="destaque-image-1"/>
+                        <img src={artigo2} alt="" className="destaque-image-1"/>
+                        <img src={artigo3} alt="" className="destaque-image-1"/>
+                        <img src={artigo4} alt="" className="destaque-image-1"/>
                     </div>
-                    <div class="imagem-grande">
-                        <img src={artigo1} alt="" class="imagem-grande-1"/>
+                    <div className="imagem-grande">
+                        <img src={artigo1} alt="" className="imagem-grande-1"/>
                     </div>
                 </div>
-                <div class="conteudo">
+                <div className="conteudo">
                     <h3>Novas Nike Airmac</h3>
-                    <div class="estrelas">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
+                    <div className="estrelas">
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
                     </div>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Fugit officiis omnis quo laboriosam velit culpa ex illo, error enim nostrum?
                     </p>
-                    <div class="preco">77.600 Kz <span>78.700 Kz</span></div>
-                    <a href="#" class="btn">Adicioniar ao Carrinho</a>
+                    <div className="preco">77.600 Kz <span>78.700 Kz</span></div>
+                    <a href="#" className="btn">Adicioniar ao Carrinho</a>
                 </div>
             </div>
-            <div class="fila">
-                <div class="imagem-container">
-                    <div class="imagem-pequena">
-                        <img src={artigo6} alt="" class="destaque-image-2"/>
-                        <img src={artigo7} alt="" class="destaque-image-2"/>
-                        <img src={artigo8} alt="" class="destaque-image-2"/>
-                        <img src={artigo9} alt="" class="destaque-image-2"/>
+            <div className="fila">
+                <div className="imagem-container">
+                    <div className="imagem-pequena">
+                        <img src={artigo6} alt="" className="destaque-image-2"/>
+                        <img src={artigo7} alt="" className="destaque-image-2"/>
+                        <img src={artigo8} alt="" className="destaque-image-2"/>
+                        <img src={artigo9} alt="" className="destaque-image-2"/>
                     </div>
-                    <div class="imagem-grande">
-                        <img src={artigo6} alt="" class="imagem-grande-2"/>
+                    <div className="imagem-grande">
+                        <img src={artigo6} alt="" className="imagem-grande-2"/>
                     </div>
                 </div>
-                <div class="conteudo">
+                <div className="conteudo">
                     <h3>Novas Nike Airmac</h3>
-                    <div class="estrelas">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
+                    <div className="estrelas">
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
                     </div>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Fugit officiis omnis quo laboriosam velit culpa ex illo, error enim nostrum?
                     </p>
-                    <div class="preco">79.600 Kz <span>80.700 Kz</span></div>
-                    <a href="#" class="btn">Adicioniar ao Carrinho</a>
+                    <div className="preco">79.600 Kz <span>80.700 Kz</span></div>
+                    <a href="#" className="btn">Adicioniar ao Carrinho</a>
                 </div>
             </div>
-            <div class="fila">
-                <div class="imagem-container">
-                    <div class="imagem-pequena">
-                        <img src={artigo10} alt="" class="destaque-image-3"/>
-                        <img src={artigo11} alt="" class="destaque-image-3"/>
-                        <img src={artigo12} alt="" class="destaque-image-3"/>
-                        <img src={artigo13} alt="" class="destaque-image-3"/>
+            <div className="fila">
+                <div className="imagem-container">
+                    <div className="imagem-pequena">
+                        <img src={artigo10} alt="" className="destaque-image-3"/>
+                        <img src={artigo11} alt="" className="destaque-image-3"/>
+                        <img src={artigo12} alt="" className="destaque-image-3"/>
+                        <img src={artigo13} alt="" className="destaque-image-3"/>
                     </div>
-                    <div class="imagem-grande">
-                        <img src={artigo10} alt="" class="imagem-grande-3"/>
+                    <div className="imagem-grande">
+                        <img src={artigo10} alt="" className="imagem-grande-3"/>
                     </div>
                 </div>
-                <div class="conteudo">
+                <div className="conteudo">
                     <h3>Novas Nike Airmac</h3>
-                    <div class="estrelas">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
+                    <div className="estrelas">
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
                     </div>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Fugit officiis omnis quo laboriosam velit culpa ex illo, error enim nostrum?
                     </p>
-                    <div class="preco">83.600 Kz <span>82.735 Kz</span></div>
-                    <a href="#" class="btn">Adicioniar ao Carrinho</a>
+                    <div className="preco">83.600 Kz <span>82.735 Kz</span></div>
+                    <a href="#" className="btn">Adicioniar ao Carrinho</a>
                 </div>
             </div>
+        </Fade>
         </section>
        
 
-        <section class="equipa" id="equipa">
-            <h1 class="cabecalho">Desenvolvedor do site e Criador da marca <span>Sunikas</span></h1>
-            <div class="caixa-container">
-                <div class="caixa">
+        <section className="equipa" id="equipa">
+        <Fade left big cascade>
+            <h1 className="cabecalho">Desenvolvedor do site e Criador da marca <span>Sunikas</span></h1>
+            <div className="caixa-container">
+                <div className="caixa">
                     <img src={equipa1} alt=""/>
                     <h3>Willfredy Vieira Dias</h3>
+                    <h4>wwwwwww</h4>
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                         Eos sequi temporibus impedit corporis vero ab exercitationem 
                         dolore voluptatibus, nisi non.
                     </p>
-                    <div class="estrelas">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa fa-star"></i>
+                    <div className="estrelas">
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa fa-star"></i>
                     </div>
                 </div>
             </div>
+        </Fade>
         </section>
       
-        <section class="novidades" id="novidades">
-            <div class="conteudo">
+        <section className="novidades" id="novidades">
+        <Fade left big cascade>
+            <div className="conteudo">
                 <h3>Deixe o seu E-mail e receba os novos productos</h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Fuga sed itaque ducimus maxime facere nihil expedita non sunt? Nostrum, voluptatem?
                 </p>
                 <form action="">
-                    <input type="email" placeholder="Por favor, Deixe o seu E-mail" class="email"/>
-                    <input type="submit" value="Registar" class="btn"/>
+                    <input type="email" placeholder="Por favor, Deixe o seu E-mail" className="email"/>
+                    <input type="submit" value="Registar" className="btn"/>
                 </form>
             </div>
+        </Fade>
         </section>
        
-        <section class="copyright" id="copyright">
-            <div class="caixa">
+        <section className="copyright" id="copyright">
+            <div className="caixa">
                 <h3>@Copyright Todos os direitos reservados a Willfredy Vieira Dias e a Sunikas Dev Women (SDW)</h3>
             </div>
-            <script src="../anijs/script.js"></script>
         </section>
     </>
   )

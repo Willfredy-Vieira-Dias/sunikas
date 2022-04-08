@@ -136,6 +136,8 @@ header .icons a:hover{
     padding: 10px;
     font-weight: bolder;
     text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .cabecalho span{
     color: rgb(252, 118, 69);

@@ -233,7 +233,7 @@ h1, h2 {
   }
   
   .publicidade .lado-esquerdo a:hover {
-    background: red;
+    background: #ea1300;
     color: #fff;
     border-radius: 20px;
   }

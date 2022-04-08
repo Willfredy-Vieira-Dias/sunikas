@@ -1,7 +1,10 @@
+import Fade from 'react-reveal/Fade';
+
 const ListaTenis = ({artigos}) => {
     
     return ( 
         <>
+        <Fade left big cascade>
             {artigos.map((artigo) => (
                     <div className="caixa" key={artigo.id}>
                     <div className="icones">
@@ -22,7 +25,9 @@ const ListaTenis = ({artigos}) => {
                         </div>
                     </div>
                 </div>
+            
                    ))}
+            </Fade>
         </>
      );
 }
