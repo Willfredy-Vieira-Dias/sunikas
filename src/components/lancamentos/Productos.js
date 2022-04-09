@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import ListaTenis from '../listatenis/ListaTenis';
 import "./Productos.css"
-import Aos from "aos";
-import "aos/dist/aos.css"
 
 const Poductos = () => {
 
@@ -17,12 +15,6 @@ const Poductos = () => {
             setArtigos(data);
         });
     }, []);
-
-    const Pricing = () => {
-        useEffect(() =>{
-            Aos.init({duration: 1000});
-        }, []);
-    }
 
   return (
     <>

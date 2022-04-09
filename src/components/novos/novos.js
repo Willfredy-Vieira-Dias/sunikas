@@ -16,6 +16,7 @@ import equipa1 from "../img/willfredyimg.png"
 import equipa2 from "../img/team/2.png"
 import equipa3 from "../img/team/3.png"
 import Fade from 'react-reveal/Fade';
+import PopUp from '../popup/dialog'
 
 const novos = () => {
   return (
@@ -49,7 +50,7 @@ const novos = () => {
                         Fugit officiis omnis quo laboriosam velit culpa ex illo, error enim nostrum?
                     </p>
                     <div className="preco">77.600 Kz <span>78.700 Kz</span></div>
-                    <a href="#" className="btn">Adicioniar ao Carrinho</a>
+                    <a href="#" className="btn"><PopUp/></a>
                 </div>
             </div>
             <div className="fila">
@@ -121,7 +122,7 @@ const novos = () => {
                 <div className="caixa">
                     <img src={equipa1} alt=""/>
                     <h3>Willfredy Vieira Dias</h3>
-                    <h4>wwwwwww</h4>
+                    <h4>Profissional</h4>
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                         Eos sequi temporibus impedit corporis vero ab exercitationem 
@@ -157,7 +158,11 @@ const novos = () => {
        
         <section className="copyright" id="copyright">
             <div className="caixa">
-                <h3>@Copyright Todos os direitos reservados a Willfredy Vieira Dias e a Sunikas Dev Women (SDW)</h3>
+                <h3>@Copyright Todos os direitos reservados a Willfredy Vieira Dias e a Sunikas Dev Women (SDW)
+                <br/>Sinta-se à vontade. A casa é sua!.<br/>Estamos ansiosos por saber como está a ser a sua experiência cá no site.
+                <br/>Visite as nossas redes sociais:<br/>
+                <i class="fa-brands fa-github"></i> <i class="fa-brands fa-facebook-f"> </i> <i class="fa-brands fa-instagram"> </i> <i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-whatsapp"></i>
+                </h3>
             </div>
         </section>
     </>

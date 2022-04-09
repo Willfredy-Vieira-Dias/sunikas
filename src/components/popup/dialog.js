@@ -14,6 +14,8 @@ import imagem1 from "../img/jordan-shoe.png"
 import imagem2 from "../img/NikeAirJordan23.png"
 import imagem3 from "../img/NikeAirJordan24.png"
 import imagem4  from "../img/NikejustDoit.png"
+import Formulario from "../email/Formulario"
+import { useState } from "react";
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   '& .MuiDialogContent-root': {
@@ -63,10 +65,17 @@ export default function CustomizedDialogs() {
     setOpen(false);
   };
 
+  const FFormulario = () =>{
+    <div>
+    <Formulario/>
+    </div>
+  }
+  const [comprar, setComprar] = useState(false);
+
   return (
     <div>
-      <Button variant="outlined" onClick={handleClickOpen}>
-        Open dialog
+      <Button style={{fontSize: 20, borderRadius: 15, border: 'transparent', color: '#ea1300'}} variant="outlined" onClick={handleClickOpen}>
+        Comprar
       </Button>
       <BootstrapDialog
         aria-labelledby="customized-dialog-title"
@@ -77,7 +86,10 @@ export default function CustomizedDialogs() {
           <h2 style={{color: '#212121', textAlign: 'center', fontSize: 25}}>Sunikas</h2>
         </BootstrapDialogTitle>
         <DialogContent dividers>
-        <section className='popuptenis'>
+
+        {
+          !comprar ? 
+          <section className='popuptenis'>
         <div className="banner">
             <div className="texto-banner">
                 <h1>
@@ -89,7 +101,8 @@ export default function CustomizedDialogs() {
                 <div className="preco">
                     <h3>63.800 Kz</h3>
                 </div>
-                <a href="#" className="botao-comprar">Comprar</a>
+                <a href='#' onClick={() => setComprar(true)} className="botao-comprar">Comprar</a>
+                
             </div>
             <div className="imagem-banner">
                 <img className='img1' src={imagem1}/>
@@ -99,6 +112,10 @@ export default function CustomizedDialogs() {
             </div>
         </div>
     </section>
+    
+    : <Formulario/>
+
+    }
         </DialogContent>
         <DialogActions>
         </DialogActions>

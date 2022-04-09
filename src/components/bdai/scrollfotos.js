@@ -41,6 +41,7 @@ const scrollfotos = () => {
           <div className='tenis'>
            <img src={Jordan} alt="" />
           </div>
+          
         </ParallaxLayer>
 
         <ParallaxLayer offset={2.5} speed={1.5} style={{ ...alignCenter, justifyContent: 'flex-end' }}>
